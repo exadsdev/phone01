@@ -5,8 +5,10 @@ import { products, productMap } from "@/app/lib/products";
 
 const SITE = "https://www.pgphone-store.com";
 
-export function generateStaticParams() {
+export function generateStaticParams() { 
   return products.map((p) => ({ slug: p.slug }));
+
+ 
 }
 
 export async function generateMetadata({ params }) {
@@ -65,6 +67,9 @@ export default async function ProductPage({ params }) {
     },
   };
 
+    const rawBase = process.env.NEXT_PUBLIC_IMG_BASE_URL ;
+  const baseURL = String(rawBase || "").replace(/\/+$/, ""); 
+
   return (
     <div className="container py-5">
       <Script
@@ -97,7 +102,9 @@ export default async function ProductPage({ params }) {
           ) : null}
 
           <div className="d-flex gap-2">
-            <button className="btn btn-primary">สั่งซื้อสินค้า</button>
+             <a href={baseURL} className="btn btn-primary" target="_blank" rel="noopener noreferrer">สั่งซื้อสินค้า</a>
+
+
             <a href="/#products" className="btn btn-outline-secondary">
               กลับไปดูสินค้าทั้งหมด
             </a>

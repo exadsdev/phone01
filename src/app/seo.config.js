@@ -1,6 +1,6 @@
 export const SITE = "https://www.sexshop168.shop";
 export const BRAND = "PG Phone";
-export const DEFAULT_OG = "/img/review.jpg";
+export const DEFAULT_OG = `${SITE}/img/review.jpg`;
 export const KEYWORDS = [
   "PG",
   "PG Phone",

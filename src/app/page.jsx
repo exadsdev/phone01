@@ -213,7 +213,9 @@ export default function LandingPage() {
             className="btn btn-primary"
           >
            instagram
-          </a>
+          </a> 
+
+
         </div>
       </section>
     </>
