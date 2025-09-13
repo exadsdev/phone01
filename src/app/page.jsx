@@ -34,6 +34,19 @@ export default function LandingPage() {
   
       <section className="bg-light py-5 text-center">
         <div className="container">
+   <div className="col-lg-6 mx-auto">
+            <div className="ratio ratio-16x9 rounded-4 overflow-hidden shadow-sm">
+              <Image
+                src="/img/review.jpg"
+                alt="PG Phone สมาร์ทโฟน 4G หน้าจอ 6 นิ้ว"
+                fill
+                priority
+                sizes="(max-width: 768px) 100vw, 50vw"
+                style={{ objectFit: "cover" }}
+              />
+            </div>
+          </div>
+          
           <h1 className="mb-3">PG Phone - มือถือคุณภาพ ทุกรุ่น</h1>
           <p className="lead mb-4">
             ร้านขายโทรศัพท์มือถือราคาถูกยี่ห้อ PG | สมาร์ทโฟน 4G ระบบแอนดรอยด์
